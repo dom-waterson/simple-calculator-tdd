@@ -8,7 +8,7 @@
   },
   "scripts": {
     "precommit": "npm run lint",
-    "prepublish": "npm test",
+    "prepush": "npm test",
     "test": "mocha",
     "test:watch": "mocha --watch",
     "lint": "eslint ."
