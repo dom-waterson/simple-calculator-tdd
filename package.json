@@ -7,8 +7,11 @@
     "test": "tests"
   },
   "scripts": {
+    "precommit": "npm run lint",
+    "prepublish": "npm test",
     "test": "mocha",
-    "test:watch": "mocha --watch"
+    "test:watch": "mocha --watch",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,13 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
     "mocha": "^5.2.0",
     "sinon": "^6.3.3"
   }
