@@ -29,5 +29,19 @@
     "husky": "^0.14.3",
     "mocha": "^5.2.0",
     "sinon": "^6.3.3"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "mocha": true
+    },
+    "globals": {
+      "expect": true
+    }
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }
