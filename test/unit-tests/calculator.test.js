@@ -1,4 +1,6 @@
-import add from '../../src/calculator';
+import {
+  add, divide, multiply, subtract,
+} from '../../src/calculator';
 
 describe('Calculator functions', () => {
   describe('Add', () => {
@@ -8,14 +10,20 @@ describe('Calculator functions', () => {
   });
 
   describe('Division', () => {
-    it('Should take two numbers and return the correct value');
+    it('Should take two numbers and return the correct value', () => {
+      expect(divide(10, 2)).to.equal(5);
+    });
   });
 
   describe('Multiplication', () => {
-    it('Should take two numbers and return the correct value');
+    it('Should take two numbers and return the correct value', () => {
+      expect(multiply(10, 5)).to.equal(50);
+    });
   });
 
   describe('Subtraction', () => {
-    it('Should take two numbers and return the correct value');
+    it('Should take two numbers and return the correct value', () => {
+      expect(subtract(10, 5)).to.equal(5);
+    });
   });
 });
